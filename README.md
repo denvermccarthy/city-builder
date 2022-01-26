@@ -6,6 +6,24 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 ## Making a plan
 
+1. create html markup (select, img, input)
+ACP
+2. in app.js, grab dom elements and define your state
+
+3. you'll then create a function that will return the string that holds all your change of state. lets call it createCountString() 
+ex. 'You've changed architecture X amount of times '
+
+4. test that function
+Passing? ACP
+4. set up event listeners for each select that will update the img src based on which value was selected, updates the changes state and calls a displayChanges() function
+
+5. in displayChanges() you'll set a variable equal to makeChangeString with the parameters of the change in state counters
+ACP
+6. now start on the slogans, set up an event listener that listens for the submit button clicks and stores the value of the input box in a variable. push that value into an empty array called slogans. Call the function displaySlogan() and clear out the text in the input field 
+
+
+test to make sure this is working with console lo
+7. create a function called displaySlogan() that will loop through the slogans array and create an HTML element for each string in that array. Set the text content to whatever the value is in the array (let slogan of slogans)
 1) **Make a drawing of your app. Simple "wireframes"**
 1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
 1) **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")** 
