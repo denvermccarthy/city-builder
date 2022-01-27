@@ -10,14 +10,14 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ACP
 2. in app.js, grab dom elements and define your state
 
-3. you'll then create a function that will return the string that holds all your change of state. lets call it createCountString() 
+3. you'll then create a function that will return the string that holds all your change of state. lets call it createStatsString() 
 ex. 'You've changed architecture X amount of times '
 
 4. test that function
 Passing? ACP
-4. set up event listeners for each select that will update the img src based on which value was selected, updates the changes state and calls a displayChanges() function
+4. set up event listeners for each select that will update the img src based on which value was selected, updates the changes state and calls a displayStats() function
 
-5. in displayChanges() you'll set a variable equal to makeChangeString with the parameters of the change in state counters
+5. in displayStats() you'll set a variable equal to createStatsString with the parameters of the change in state counters
 ACP
 6. now start on the slogans, set up an event listener that listens for the submit button clicks and stores the value of the input box in a variable. push that value into an empty array called slogans. Call the function displaySlogan() and clear out the text in the input field 
 
