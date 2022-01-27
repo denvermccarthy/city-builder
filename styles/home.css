@@ -1,1 +1,9 @@
-/* add home page styles here */
+#dropdowns-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown img {
+  width: 100%;
+  height: auto;
+}

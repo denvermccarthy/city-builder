@@ -20,47 +20,53 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Build your ideal City!
             </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <section id="dropdowns-section">
+                <div class="dropdown" id="architecture-section">
+                    <label for="architecture">Architecture</label>
+                    <select name="architecture" id="architecture-dropdown">
+                        <option value="default" selected>Options</option>
+                        <option value="modern">Modern</option>
+                        <option value="gothic">Gothic</option>
+                        <option value="artdeco">Art Deco</option>
+                    </select>
+                    <img id="architecture-img" src="" alt="">
+                </div>
+                <div class="dropdown" id="climate-section">
+                    <label for="climate">Climate</label>
+                    <select name="climate" id="climate-dropdown">
+                        <option value="default" selected>Options</option>
+                        <option value="desert">Desert</option>
+                        <option value="tropical">Tropical</option>
+                        <option value="temperate">Temperate</option>
+                    </select>
+                    <img id="climate-img" src="" alt="">
+                </div>
+                <div class="dropdown" id="knownfor-section">
+                    <label for="knownfor">Known For</label>
+                    <select name="knownfor" id="knownfor-dropdown">
+                        <option value="default" selected>Options</option>
+                        <option value="greatfood">Great Food</option>
+                        <option value="greatmusic">Great Music</option>
+                        <option value="greatparks">Great Parks</option>
+                    </select>
+                    <img id="knownfor-img" src="" alt="">
+                </div>
+            </section>
+            <section id="stats-section">
+                <p id="report-stats"></p>
+            </section>
+            <section id="slogan-section">
+                <h3>Got an idea for a Slogan? Submit it here!</h3>
+                <input type="text" id="slogan-input"><button id="slogan-button">Submit</button>
+                <div id="slogan-ideas">
+                    <!-- This is where p tags of slogans should start appearing -->
+                </div>
+                <label for="reset">Slogans out of control?</label>
+                <button name="reset" id="reset">Click me!</button>
+            </section>
         </section>
     </main>
     <footer>
