@@ -1,5 +1,5 @@
 // import functions 
-import { createStatsString } from "./utils.js";
+import { createStatsString } from './utils.js';
 // console.log(createStatsString(5, 3, 1));
 // grab DOM elements
 const architectureSel = document.getElementById('architecture-dropdown');
@@ -26,8 +26,8 @@ function displayStats() {
     report.textContent = stats;
 }
 function displaySlogans() {
-  sloganIdeas.textContent = '';  
-  for (let slogan of slogans) {
+    sloganIdeas.textContent = '';  
+    for (let slogan of slogans) {
         const p = document.createElement('p');
         p.textContent = slogan;
         sloganIdeas.append(p);
@@ -58,7 +58,7 @@ knownforSel.addEventListener('change', (e) => {
     displayStats();   
 });
   // get user input
-sloganButton.addEventListener('click', (e) => {
+sloganButton.addEventListener('click', () => {
     const userSlogan = sloganInput.value;
     // console.log('test', userSlogan);
     slogans.push(userSlogan);
